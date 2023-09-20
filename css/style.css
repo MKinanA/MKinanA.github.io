@@ -490,6 +490,10 @@ div.bottom-gradient {
     margin: 0.5rem;
 }
 
+.contact form .input-box input.number::-webkit-outer-spin-button, .contact form .input-box input.number::-webkit-inner-spin-button {
+    display: none;
+}
+
 .contact form textarea {
     width: calc(100% - 1rem);
     margin: 0.5rem 0.5rem 1rem;
