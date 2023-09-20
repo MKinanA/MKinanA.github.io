@@ -3,134 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thing</title>
-    <link rel="stylesheet" href="style.css">
+    <title>MKinanA</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
-        <div class="navmenu">
-        <div class="logo"><a href="#head">Thing</a></div>
-        <div class="right">
-            <ul>
-                <li><a href="#section1">About</a></li>
-                <li><a href="#section2">Pricing</a></li>
-                <li><a href="#section3">Support</a></li>
-                <li><a href="#section4">Learn More</a></li>
-                <li><a href="#section5">Help</a></li>
-            </ul>
-            <div class="loginbtn"><a href="./login.html">Log In</a></div>
+    <section class="welcome-screen" id="welcome-screen">
+        <div class="content">
+            <h1>Ready to see my <span>Portofolio</span>?</h1>
+            <a href="#home" class="btn">Let's go</a>
         </div>
-        </div>
-    </nav>
-    <header id="head">
-        <div class="center">
-            <div class="title">Welcome to Thing</div>
-            <div class="subtitle">An Amazing Thing</div>
-            <div class="btn"><a href="#section1"><button>About</button></a></div>
-        </div>
-    </header>
-    <div class="section1" id="section1">
-        <div class="center">
-            <h2>About Thing</h2>
-            <ul>
-                <li class="item1">
-                    <div>
-                        <h3>A</h3>
-                        <p>Thing is <span style="color: red; font-weight: bold;">A</span>mazing, lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus neque esse sint aliquid mollitia dolor commodi!</p>
+    </section>
+    <!-- Body (Main Content) -->
+    <div class="body" id="body">
+        <div>
+        <!-- Header -->
+        <header>
+            <div class="header">
+                <a href="./" class="logo"><img src="img/title.png" alt="MKinanA" title="MKinanA"><!--Portofolio--></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+                <nav class="nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#portofolio">Portofolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="top-gradient"></div>
+        </header>
+        <!-- Home -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h2>Hello, it's me,</h2>
+                <h1>Muhammad Kinan Ahsan</h1>
+                <h3>I'm a <span>Front-End Developer</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="social-medias">
+                    <a target="_blank" href="" class="bx bxl-linkedin-square"></a>
+                    <a target="_blank" href="https://github.com/MKinanA" class="bx bxl-github"></a>
+                    <a target="_blank" href="" class="bx bxl-youtube"></a>
+                    <a target="_blank" href="" class="bx bxl-discord-alt"></a>
+                    <a target="_blank" href="mailto:mkinanahsan@gmail.com" class="bx bxl-gmail"></a>
+                    <a target="_blank" href="" class="bx bxl-instagram-alt"></a>
+                </div>
+                <a  target="_blank" href="" class="btn cv">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="img/home.jpg" alt="A picture of me" title="A picture of me">
+            </div>
+        </section>
+        <!-- About -->
+        <section class="section-break gradient-1-2"></section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="img/about.jpg" alt="Heil Hitler" title="Heil Hitler">
+            </div>
+            <div class="about-content">
+                <h2 class="section-heading">About <span>Me</span></h2>
+                <h3>Front-End Developer</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi, totam accusamus voluptatibus ipsum, ex, consequuntur in qui impedit nemo deleniti? Expedita reiciendis eum sapiente molestias consequuntur eos quia eaque!</p>
+                <a href="" class="btn">Read More</a>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="section-break gradient-2-1"></section>
+        <section class="services" id="services">
+            <h2 class="section-heading">My <span>Services</span></h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <span class="bx bx-code-alt"></span> <h3>Front-End Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ut? Quam enim ullam itaque veritatis sit qui ipsam facere nisi incidunt voluptates porro, atque obcaecati aperiam cupiditate pariatur assumenda laborum.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+                <div class="service-box">
+                    <span class="bx bx-palette"></span> <h3>Simple Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum magnam omnis temporibus, neque illum autem, officiis quasi quo pariatur cumque sequi, ex impedit voluptatem reprehenderit. Eveniet distinctio possimus deserunt.</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+                <div class="service-box">
+                    <span class="bx bxl-android"></span> <h3>Android Application Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla magnam, impedit laborum suscipit natus tempora? Neque repellendus, quam doloribus tenetur, aliquam deserunt nesciunt quos debitis velit rem praesentium veniam ad?</p>
+                    <a href="" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+        <!-- Portofolio -->
+        <section class="section-break gradient-1-2"></section>
+        <section class="portofolio" id="portofolio">
+            <h2 class="section-heading">My <span>Projects</span></h2>
+            <div class="portofolio-container">
+                <div class="portofolio-box">
+                    <img src="img/projects/1.png" alt="Project 1">
+                    <div class="portofolio-layer">
+                        <h3>Webpage about Cat <a href="https://kucing.mkinana.repl.co/" target="_blank" class="bx bx-link-external"></a></h3>
+                        <p>A simple webpage about cat, using HTML and CSS.</p>
                     </div>
-                </li>
-                <li class="item2">
-                    <div>
-                        <h3>B</h3>
-                        <p>Thing is <span style="color: green; font-weight: bold;">B</span>eautiful, lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt nostrum! Nisi quod eaque ea asperiores.</p>
+                </div>
+                <div class="portofolio-box">
+                    <img src="img/projects/2.png" alt="Project 1">
+                    <div class="portofolio-layer">
+                        <h3>Landing Page Design <a href="https://thing.mkinana.repl.co/" target="_blank" class="bx bx-link-external"></a></h3>
+                        <p>A simple landing page design for a company profile website, using HTML and CSS.</p>
                     </div>
-                </li>
-                <li class="item3">
-                    <div>
-                        <h3>C</h3>
-                        <p>Thing is <span style="color: blue; font-weight: bold;">C</span>ool, lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sequi velit illo corrupti facere similique eos.</p>
+                </div>
+                <div class="portofolio-box">
+                    <img src="img/projects/3.png" alt="Project 1">
+                    <div class="portofolio-layer">
+                        <h3>Company Profile Webpage <a href="https://food.mkinana.repl.co/" target="_blank" class="bx bx-link-external"></a></h3>
+                        <p>A company profile webpage for a food company, using HTML, CSS, and JS.</p>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section class="section-break gradient-2-1"></section>
+        <section class="contact" id="contact">
+            <h2 class="section-heading">Contact <span>Me</span></h2>
+            <form action="">
+                <div class="input-box">
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="number" id="number" placeholder="Number">
+                    <input type="text" name="subject" id="subject" placeholder="Email subject">
+                </div>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <div class="button-input-box">
+                    <input class="btn" type="submit">
+                    <p>By submitting this form, you agree to our form's <a href="">Privacy Policy</a> and <a href="">Terms of Service</a>.</p>
+                    <input class="btn" type="reset">
+                </div>
+            </form>
+        </section>
+        <div class="bottom-gradient"></div>
         </div>
+        <!-- Footer -->
+        <section class="section-break gradient-1-0"></section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Muhammad Kinan Ahsan | All Rights Reserved</p>
+            </div>
+            <div class="footer-icon-top">
+                <a href="#welcome-screen" class="bx bx-log-out"></a>
+            </div>
+        </footer>
     </div>
-    <div class="section2" id="section2">
-        <div class="center">
-            <h2>Pricing</h2>
-            <ul>
-                <li class="item1">
-                    <div>
-                        <p class="pack-name">Starter Pack</p>
-                        <p class="price-small">Rp 3,2m</p>
-                        <h3>Free<span>/forever</span></h3>
-                        <div class="lists">
-                            <ul class="false">
-                                <li>Wood dorm</li>
-                                <li>Wood class</li>
-                                <li>Wood office</li>
-                                <li>Nice mosque</li>
-                                <li>Nice cafeteria</li>
-                            </ul>
-                            <ul class="true">
-                                <li>Nothing</li>
-                            </ul>
-                            <br>
-                            <div class="break"></div>
-                        </div>
-                        <div class="gradient-bg"></div>
-                        <a href="./login.html"><button>Get Started</button></a>
-                    </div>
-                </li>
-                <li class="item2">
-                    <div>
-                        <p class="pack-name">Monthly Pack</p>
-                        <p class="price-small">Rp 3,5m</p>
-                        <h3>Rp 3,2m<span>/month</span></h3>
-                        <div class="lists">
-                            <ul class="true">
-                                <li>Wood dorm</li>
-                                <li>Wood class</li>
-                                <li>Wood office</li>
-                                <li>Nice mosque</li>
-                                <li>Nice cafeteria</li>
-                            </ul>
-                            <ul class="false">
-                                <li>8.8% Discount</li>
-                            </ul>
-                            <br>
-                            <div class="break"></div>
-                        </div>
-                        <div class="gradient-bg"></div>
-                        <a href="./payment.html"><button>Subscribe</button></a>
-                    </div>
-                </li>
-                <li class="item3">
-                    <div>
-                        <p class="pack-name">Annual Pack</p>
-                        <p class="price-small">Rp 38,4m</p>
-                        <h3>Rp 35m<span>/year</span></h3>
-                        <div class="lists">
-                            <ul class="true">
-                                <li>Wood dorm</li>
-                                <li>Wood class</li>
-                                <li>Wood office</li>
-                                <li>Nice mosque</li>
-                                <li>Nice cafeteria</li>
-                                <li>8.8% Discount</li>
-                            </ul>
-                            <ul class="false"></ul>
-                            <br>
-                            <div class="break"></div>
-                        </div>
-                        <div class="gradient-bg"></div>
-                        <a href="./payment.html"><button>Subscribe</button></a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <footer>
-        <div class="center"><p>Copyright ©</p></div>
-    </footer>
+    <!-- js -->
+    <script src="js/script.js"></script>
 </body>
 </html>
