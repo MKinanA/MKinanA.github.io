@@ -492,6 +492,16 @@ div.bottom-gradient {
 
 .contact form .input-box input.number::-webkit-outer-spin-button, .contact form .input-box input.number::-webkit-inner-spin-button {
     display: none;
+    appearance: none;
+}
+
+.contact form .input-box input::-webkit-outer-spin-button, .contact form .input-box input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.contact form .input-box input[type=number] {
+    -moz-appearance: textfield;
 }
 
 .contact form textarea {
