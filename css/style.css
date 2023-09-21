@@ -545,6 +545,7 @@ div.bottom-gradient {
     font-size: 2rem;
     color: var(--text-color);
 }
+
 .footer .footer-icon-top:hover a {
     color: var(--main-color);
 }
