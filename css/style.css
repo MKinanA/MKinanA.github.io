@@ -516,6 +516,26 @@ div.bottom-gradient {
     margin-top: 0;
 }
 
+.contact form .button-input-box .btn[type=submit]:hover {
+    box-shadow: 0 0 1rem #00ff00;
+    color: #00ff00;
+    border: .25rem solid #00ff00;
+}
+
+.contact form .button-input-box .btn[type=reset] {
+    background-color: var(--bg-color-2);
+    border: .25rem solid var(--bg-color-2);
+    color: var(--bg-color);
+}
+
+.contact form .button-input-box .btn[type=reset]:hover {
+    box-shadow: 0 0 1rem #ff0000;
+    color: #ff0000;
+    border: .25rem solid #ff0000;
+    background: transparent;
+    font-weight: 700;
+}
+
 .contact form .button-input-box p a {
     color: var(--text-color);
     text-decoration: underline;
