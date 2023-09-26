@@ -45,7 +45,8 @@
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 section {
@@ -104,7 +105,7 @@ section.welcome-screen#welcome-screen div.content a.btn:hover {
     color: var(--main-color);
 }
 
-.body {
+body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-y: auto;
