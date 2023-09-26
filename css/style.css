@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro&display=swap');
 
 * {
     margin: 0;
@@ -254,10 +255,12 @@ div.bottom-gradient {
 .home .home-content h3 {
     font-size: 2.4rem;
     font-weight: 700;
+    font-family: 'Source Code Pro', Poppins, sans-serif;
 }
 
 .home .home-content h3 span {
     color: var(--main-color);
+    font-family: 'Source Code Pro', Poppins, sans-serif;
 }
 
 .home .home-content p {
@@ -507,7 +510,7 @@ div.bottom-gradient {
 .contact form textarea {
     width: calc(100% - 1rem);
     margin: 0.5rem 0.5rem 1rem;
-    height: 20vh;
+    height: 16em;
     resize: none;
 }
 
@@ -558,7 +561,6 @@ div.bottom-gradient {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transform: rotateZ(90deg);
 }
 
 .footer .footer-icon-top a {
@@ -627,6 +629,7 @@ div.bottom-gradient {
         transform: rotateX(90deg);
         visibility: hidden;
         transition: all .5s ease-out;
+        box-shadow: 0 0 2rem #000000;
     }
     .nav.active {
         visibility: initial;
@@ -698,5 +701,18 @@ div.bottom-gradient {
     }
     .contact form .input-box input {
         width: calc(100% - 1rem);
+    }
+}
+
+@media (max-width: 365px) {
+    .home .home-img img, .about .about-img img {
+        width: 90vw;
+    }
+    .footer {
+        flex-direction: column-reverse;
+    }
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
     }
 }

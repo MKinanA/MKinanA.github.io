@@ -50,3 +50,22 @@ window.onscroll = () => {
         };
     });
 };
+
+// // ScrollReveal
+// ScrollReveal({
+//     reset: true,
+//     distance: '80px',
+//     duration: 2000,
+//     delay: 250
+// });
+// ScrollReveal().reveal('.home-content, .section-heading', { origin: 'top' });
+// ScrollReveal().reveal('.home-img, .services-container', { origin: 'bottom' });
+
+// Typed.js
+const typed = new Typed('#im-a', {
+    strings: ['Front-End Web Developer', 'Back-End Web Developer', 'Graphic Designer', 'Android Application Developer', 'Scratch Scratcher'],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 2000,
+    loop: true
+});
