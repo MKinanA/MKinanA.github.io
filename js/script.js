@@ -9,10 +9,10 @@ menuIcon.onclick = () => {
     nav.classList.toggle('active');
 }
 
-nav.addEventListener("click", function(){
-    menuIcon.classList.remove('bx-x');
-    nav.classList.remove("active");
-});
+// nav.addEventListener("click", function(){
+//     menuIcon.classList.remove('bx-x');
+//     nav.classList.remove("active");
+// });
 
 // sections.array.forEach(section => {
 //     section.addEventListener("hover", function(){
@@ -26,11 +26,12 @@ nav.addEventListener("click", function(){
 //     nav.classList.remove("active");
 // });
 
-window.onscroll = ()=>{
-    console.log('scrolled');
-    menuIcon.classList.remove('bx-x');
-    nav.classList.remove("active");
-};
+// This doesn't work, I don't know why
+// window.onscroll = ()=>{
+//     console.log('scrolled');
+//     menuIcon.classList.remove('bx-x');
+//     nav.classList.remove("active");
+// };
 
 // // Active Section Detection
 // let navlinks = document.querySelectorAll('header .header nav a');
