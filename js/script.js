@@ -2,7 +2,6 @@
 let menuIcon = document.querySelector('#menu-icon');
 let nav = document.querySelector('.nav');
 let sections = document.querySelector('section');
-let body = document.querySelector('.body');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
@@ -20,12 +19,6 @@ sections.addEventListener("click", function(){
 });
 
 window.onscroll = ()=>{
-    console.log('scrolled')
-    menuIcon.classList.remove('bx-x');
-    nav.classList.remove("active");
-};
-
-body.onscroll = ()=>{
     console.log('scrolled')
     menuIcon.classList.remove('bx-x');
     nav.classList.remove("active");
