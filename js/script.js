@@ -25,7 +25,7 @@ window.onscroll = ()=>{
 };
 
 // Active Section Detection
-let navlinks = document.querySelectorAll('header nav a');
+let navlinks = document.querySelectorAll('header .header nav a');
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -44,15 +44,15 @@ window.onscroll = () => {
     });
 };
 
-// // ScrollReveal
-// ScrollReveal({
-//     reset: true,
-//     distance: '80px',
-//     duration: 2000,
-//     delay: 250
-// });
-// ScrollReveal().reveal('.home-content, .section-heading', { origin: 'top' });
-// ScrollReveal().reveal('.home-img, .services-container', { origin: 'bottom' });
+// ScrollReveal
+ScrollReveal({
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delay: 250
+});
+ScrollReveal().reveal('.home-content', { origin: 'top' });
+ScrollReveal().reveal('.home-img', { origin: 'bottom' });
 
 // Typed.js
 const typed = new Typed('#im-a', {
