@@ -60,5 +60,6 @@ const typed = new Typed('#im-a', {
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 2000,
+    typeDelay: 500,
     loop: true
 });
