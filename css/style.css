@@ -227,7 +227,7 @@ div.bottom-gradient {
 }
 
 .home {
-    margin-top: -10vh;
+    margin-top: -12vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -701,14 +701,14 @@ div.bottom-gradient {
     .contact form .button-input-box p {
         margin: 0 1rem;
     }
+    .contact form .input-box input {
+        width: calc(100% - 1rem);
+    }
 }
 
 @media (max-width: 490px) {
     html {
         font-size: 45%;
-    }
-    .contact form .input-box input {
-        width: calc(100% - 1rem);
     }
 }
 
