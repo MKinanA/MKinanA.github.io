@@ -1,8 +1,14 @@
+const DEFAULT_DOMAIN = 'portfolio-mkinana.web.app';
+
+if (location.hostname != DEFAULT_DOMAIN) {
+    location.assign(`https://${DEFAULT_DOMAIN}${location.pathname}`);
+};
+
 // Toggle Menu
-let menuIcon = document.querySelector('#menu-icon');
-let nav = document.querySelector('.nav');
-let sections = document.querySelector('section');
-let body = document.querySelector('body');
+let menuIcon = document.querySelector('#menu-icon'),
+nav = document.querySelector('.nav'),
+sections = document.querySelector('section'),
+body = document.querySelector('body');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x');
