@@ -1,9 +1,3 @@
-const DEFAULT_DOMAIN = 'portfolio-mkinana.web.app';
-
-if (location.hostname != DEFAULT_DOMAIN) {
-    location.assign(`https://${DEFAULT_DOMAIN}${location.pathname}`);
-};
-
 // Toggle Menu
 let menuIcon = document.querySelector('#menu-icon'),
 nav = document.querySelector('.nav'),
