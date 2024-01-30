@@ -1,10 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
+
     const background = document.querySelector('body > .background'),
     hyperlinks = document.querySelectorAll('a'),
     images = document.querySelectorAll('img'),
-    mes = document.querySelectorAll('.me');
+    mes = document.querySelectorAll('.me'),
+    projects_container = document.querySelector('section#projects > div:last-child');
 
-    background.style.height = `${document.body.scrollHeight}px`;
+    function set_background_size() {
+        background.style.height = `${document.body.scrollHeight}px`;
+    };
+    set_background_size();
+
+    window.onresize = set_background_size;
 
     hyperlinks.forEach(hyperlink => {
         if (hyperlink.hasAttribute('href') && hyperlink.getAttribute('href') !== '' && hyperlink.getAttribute('href')[0] === '#') {
@@ -57,4 +64,22 @@ document.addEventListener('DOMContentLoaded', function() {
         smartBackspace: true,
         loop: true
     });
+
+    fetch('src/file/projects.json')
+    .then(projects => {return projects.json()})
+    .then(projects => {
+        let projects_content = '';
+        projects.forEach(project => {
+            projects_content += `
+                <div>
+                    <div>
+                        <iframe src="${project.url}" frameborder="0"></iframe>
+                    </div>
+                    <h2>${project.title}</h2>
+                    <p>${project.desc}</p>
+                </div>`;
+        });
+        projects_container.innerHTML = projects_content;
+    });
+
 });

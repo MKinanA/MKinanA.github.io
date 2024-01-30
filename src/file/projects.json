@@ -1,0 +1,47 @@
+[
+    {
+        "url": "https://mkinana.github.io/",
+        "title": "Portfolio",
+        "desc": "This"
+    },
+    {
+        "url": "https://mkinana.github.io/old-portfolio/",
+        "title": "Old Portfolio",
+        "desc": "My first portfolio"
+    },
+    {
+        "url": "https://mkinana.github.io/cat/",
+        "title": "Cat Website",
+        "desc": "One of my favorites"
+    },
+    {
+        "url": "https://coffee-taupe.vercel.app/",
+        "title": "Coffee Website",
+        "desc": "A TailwindCSS project"
+    },
+    {
+        "url": "https://mkinana.github.io/Quran/",
+        "title": "Qur'an Website",
+        "desc": "A Bootstrap project"
+    },
+    {
+        "url": "https://mkinana.github.io/tic-tac-toe/",
+        "title": "Tic Tac Toe",
+        "desc": "A native HTML CSS JS project"
+    },
+    {
+        "url": "https://mkinana.github.io/idn/",
+        "title": "IDNBS CP Website",
+        "desc": "A native HTML CSS JS project"
+    },
+    {
+        "url": "https://mkinana.github.io/smpipbm/",
+        "title": "SMPIPBM CP Website",
+        "desc": "A TailwindCSS project"
+    },
+    {
+        "url": "https://mkinana.github.io/food-company-profile-website/",
+        "title": "Food CP Website",
+        "desc": "A native HTML CSS JS project"
+    }
+]
