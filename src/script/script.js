@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         me.setAttribute('title', 'Muhammad Kinan Ahsan');
     });
 
+    document.querySelector('section#home > div:first-child > h2').innerHTML = 'and I\'m a "<span id="typed"></span>"';
     const typed = new Typed('#typed', {
         strings: [
             'Front-End Web Developer',
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div>
                         <iframe src="${project.url}" frameborder="0"></iframe>
                     </div>
-                    <h2>${project.title}</h2>
+                    <h3>${project.title}</h3>
                     <p>${project.desc}</p>
                 </div>`;
         });
