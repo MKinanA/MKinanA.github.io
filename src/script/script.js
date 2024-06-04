@@ -72,12 +72,26 @@ document.addEventListener('DOMContentLoaded', function() {
         let projects_content = '';
         projects.forEach(project => {
             projects_content += `
-                <div>
+                <div${project.hasOwnProperty('url') ? ` onclick="window.open('${project.url}', '_blank'); return false;"` : ''}>
+                    ${
+                    project.hasOwnProperty('url') || project.hasOwnProperty('img')
+                    ?
+                    `<div>
+                        ${
+                        project.hasOwnProperty('url') 
+                        ? 
+                        `<iframe src="${project.url}" frameborder="0"></iframe>`
+                        :
+                        `<img src="${project.img}"></img>`
+                        }
+                    </div>`
+                    :
+                    ''
+                    }
                     <div>
-                        <iframe src="${project.url}" frameborder="0"></iframe>
+                        <h3>${project.title}</h3>
+                        <p>${project.desc}</p>
                     </div>
-                    <h3>${project.title}</h3>
-                    <p>${project.desc}</p>
                 </div>`;
         });
         projects_container.innerHTML = projects_content;
