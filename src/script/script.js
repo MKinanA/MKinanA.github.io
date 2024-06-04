@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let projects_content = '';
         projects.forEach(project => {
             projects_content += `
-                <div${project.hasOwnProperty('url') ? ` onclick="window.open('${project.url}', '_blank'); return false;"` : ''}>
+                <div>
                     ${
                     project.hasOwnProperty('url') || project.hasOwnProperty('img')
                     ?
