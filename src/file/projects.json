@@ -43,5 +43,10 @@
         "url": "https://mkinana.github.io/food-company-profile-website/",
         "title": "Food CP Website",
         "desc": "A native HTML CSS JS project"
+    },
+    {
+        "img": "src/img/tickety.png",
+        "title": "E-Commerce Website",
+        "desc": "Using <a href=\"https://galihpratama.notion.site/9f6aadb1afb547dc8c72186a88a633eb?v=e1ec37cd54854565839e4664bf0a4afc\">Tickety template by Galih Pratama</a>"
     }
 ]
