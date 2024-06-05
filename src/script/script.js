@@ -1,3 +1,17 @@
+async function fetchUntilSuccess(url) {
+    while (true) {
+        try {
+            const response = await fetch(url);
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.statusText}`);
+            }
+            return await response; // Or response.text() / response.blob() depending on your needs
+        } catch (error) {
+            console.error('Fetch failed, retrying...', error);
+        };
+    };
+};
+
 document.addEventListener('DOMContentLoaded', function() {
 
     const background = document.querySelector('body > .background'),
@@ -66,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
         loop: true
     });
 
-    fetch('src/file/projects.json')
+    fetchUntilSuccess('src/file/projects.json')
     .then(projects => {return projects.json()})
     .then(projects => {
         let projects_content = '';
