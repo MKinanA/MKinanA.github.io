@@ -45,8 +45,18 @@
         "desc": "A native HTML CSS JS project"
     },
     {
+        "url": "https://mkinana.github.io/Quran-Flutter-/",
+        "title": "Quran Website (Flutter)",
+        "desc": "A Flutter project"
+    },
+    {
         "img": "src/img/tickety.png",
         "title": "E-Commerce Website",
         "desc": "Using <a href=\"https://galihpratama.notion.site/9f6aadb1afb547dc8c72186a88a633eb?v=e1ec37cd54854565839e4664bf0a4afc\">Tickety template by Galih Pratama</a>"
+    },
+    {
+        "url": "https://mkinana.github.io/landing-page/",
+        "title": "Landing Page",
+        "desc": "A simple landing page template"
     }
 ]
