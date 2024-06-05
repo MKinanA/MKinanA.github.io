@@ -12,13 +12,16 @@ async function fetchUntilSuccess(url) {
     };
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function (_event) {
 
     const background = document.querySelector('body > .background'),
     hyperlinks = document.querySelectorAll('a'),
     images = document.querySelectorAll('img'),
     mes = document.querySelectorAll('.me'),
-    projects_container = document.querySelector('section#projects > div:last-child');
+    projects_container = document.querySelector('section#projects > div:last-child'),
+    menu_button = document.getElementById('menu-button'),
+    nav_links_div = document.querySelector('header > div'),
+    header = document.querySelector('header');
 
     function set_background_size() {
         background.style.height = `${document.body.scrollHeight}px`;
@@ -109,6 +112,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>`;
         });
         projects_container.innerHTML = projects_content;
+    });
+
+    menu_button.addEventListener('click', function (_event) {
+        nav_links_div.toggleAttribute('hidden');
+    });
+
+    window.addEventListener('click', function (event) {
+        if (event.target !== header && !header.contains(event.target)) {
+            nav_links_div.setAttribute('hidden', '');
+        };
+    });
+
+    document.body.addEventListener('scroll', function (_event) {
+        nav_links_div.setAttribute('hidden', '');
     });
 
 });
