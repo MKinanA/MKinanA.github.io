@@ -15,6 +15,11 @@
         "desc": "One of my favorites"
     },
     {
+        "url": "https://mkinana.github.io/thing/",
+        "title": "Thing Landing Page",
+        "desc": "A native HTML CSS project"
+    },
+    {
         "url": "https://coffee-taupe.vercel.app/",
         "title": "Coffee Website",
         "desc": "A TailwindCSS project"
