@@ -105,6 +105,7 @@ header > svg {
 
 #menu-button {
     display: none;
+    cursor: pointer;
 }
 
 header > div {
