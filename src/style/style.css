@@ -26,16 +26,15 @@
 }
 
 *::-webkit-scrollbar {
-    margin-right: 4px;
-    width: 8px;
-    height: 8px;
+    width: calc(8px * var(--scaling-factor));
+    height: calc(8px * var(--scaling-factor));
 }
 *::-webkit-scrollbar-track {
     background: rgba(var(--theme-color), 0); 
 }
 *::-webkit-scrollbar-thumb {
     background: rgba(var(--rev-theme-color), 0.25);
-    border-radius: 4px;
+    border-radius: calc(4px * var(--scaling-factor));
 }
 *::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.25); 
@@ -143,11 +142,11 @@ header > svg * {
 }
 
 main {
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: calc(-4rem * var(--scaling-factor));
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     transform: translateZ(0);
     padding: 0;
     display: flex;
@@ -168,7 +167,7 @@ section#home {
     min-height: 100vh;
     justify-content: space-between;
     align-items: center;
-    padding-top: calc(4rem * var(--scaling-factor));
+    padding-top: calc(6rem * var(--scaling-factor));
 }
 
 section#home > div {
@@ -182,6 +181,7 @@ section#home > div {
 
 section#home > div:first-child {
     align-items: start;
+    overflow-x: hidden;
 }
 
 section#home > div:last-child {
@@ -202,9 +202,13 @@ h2{font-size: calc(2rem * var(--scaling-factor));}
 h3{font-size: calc(1.5rem * var(--scaling-factor));}
 p{font-size: calc(1rem * var(--scaling-factor)); line-height: 1.25em;}
 
+section#home > div:first-child > h3 {
+    line-height: 1.2em;
+}
+
 section#home > div:first-child > h1 {
     font-weight: 800;
-    margin: calc(0.5rem  * var(--scaling-factor)) 0;
+    line-height: 1.2em;
 }
 
 section#home > div:first-child > h1:hover {
@@ -213,7 +217,16 @@ section#home > div:first-child > h1:hover {
     line-height: 1.2em;
 }
 
-section#home > div:first-child > h2 > span {
+section#home > div:first-child > h2 {
+    display: inline-block;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.2em;
+}
+
+section#home > div:first-child > h2 > span#typed {
     font-weight: 400;
     text-decoration: underline;
 }
@@ -369,12 +382,12 @@ section#skills > div:last-child > div {
     overflow-y: auto;
 }
 
-.hover > * {
+.hover-container > *, .hover {
     outline: calc(0.25rem * var(--scaling-factor)) solid rgba(var(--rev-theme-color), 0);
     outline-offset: calc(-0.25rem * var(--scaling-factor));
 }
 
-.hover > *:hover {
+.hover-container > *:hover, .hover:hover {
     outline-offset: calc(0.25rem * var(--scaling-factor));
     outline-color: rgba(var(--rev-theme-color), 1);
 }
@@ -555,11 +568,66 @@ section#projects > div:last-child > div:has(> div:only-child):hover > div:only-c
     #menu-button {
         display: initial;
     }
+
+    section#home, section#about {
+        flex-direction: column;
+    }
+
+    section#home > div:first-child, section#home > div:last-child, section#about > div:first-child, section#about > div:last-child {
+        align-items: center;
+    }
+
+    section#home > div:first-child > *, section#about > div:first-child > *, section > div > h2 {
+        text-align: center;
+    }
+
+    section#home > div:first-child > div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    section#home > div:last-child {
+        width: 100%;
+        align-items: center;
+    }
+
+    section#home > div:last-child > img {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        width: calc(30rem * var(--scaling-factor));
+    }
+
+    section#about > div:last-child {
+        width: 100%;
+        align-items: center;
+    }
+
+    section#about > div:last-child > iframe {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        width: calc(30rem * var(--scaling-factor));
+    }
 }
 
 @media (max-width: 576px) {
     :root {
         --scaling-factor: 0.85;
+    }
+
+    section#home > div:last-child > img {
+        width: 100%;
+    }
+
+    section#about > div:last-child > iframe {
+        width: 100%;
+    }
+
+    section#projects > div:last-child {
+        flex-direction: column;
+    }
+
+    section#projects > div:last-child > div {
+        width: 100%;
     }
 }
 
