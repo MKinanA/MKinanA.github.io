@@ -241,7 +241,7 @@ section#home > div:first-child > div {
     flex-direction: row;
     width: 100%;
     height: fit-content;
-    margin: calc(1rem * var(--scaling-factor)) 0;
+    margin: calc(1rem * var(--scaling-factor)) 0.25em;
     gap: calc(0.5rem * var(--scaling-factor));
 }
 
@@ -279,6 +279,7 @@ section#home > div:first-child > a {
     outline: 0.125em solid rgba(var(--rev-theme-color), 0);
     outline-offset: -0.125em;
     cursor: pointer;
+    margin: 0.25em;
 }
 
 section#home > div:first-child > a:hover {
@@ -571,6 +572,10 @@ section#projects > div:last-child > div:has(> div:only-child):hover > div:only-c
 
     section#home, section#about {
         flex-direction: column;
+    }
+
+    section#home {
+        justify-content: center;
     }
 
     section#home > div:first-child, section#home > div:last-child, section#about > div:first-child, section#about > div:last-child {
