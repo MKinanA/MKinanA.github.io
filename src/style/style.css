@@ -165,7 +165,7 @@ section {
 section#home {
     flex-direction: row;
     min-height: 100vh;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding-top: calc(6rem * var(--scaling-factor));
 }
@@ -292,7 +292,7 @@ section#home > div:first-child > a:hover {
 
 section#about {
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -572,10 +572,6 @@ section#projects > div:last-child > div:has(> div:only-child):hover > div:only-c
 
     section#home, section#about {
         flex-direction: column;
-    }
-
-    section#home {
-        justify-content: center;
     }
 
     section#home > div:first-child, section#home > div:last-child, section#about > div:first-child, section#about > div:last-child {
