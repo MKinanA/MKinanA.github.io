@@ -127,6 +127,7 @@ header > div > a {
     text-decoration: none;
     font-size: calc(1.2rem * var(--scaling-factor));
     cursor: pointer;
+    padding: calc(1.2rem * var(--scaling-factor)) 0;
 }
 
 a, button {
@@ -570,7 +571,7 @@ section#projects > div:last-child > div:has(> div:only-child):hover > div:only-c
         border-radius: calc(0.5rem * var(--scaling-factor));
         background: rgba(var(--theme-color), 0.5);
         text-align: right;
-        padding: calc(0.75rem * var(--scaling-factor));
+        padding: calc(1.25rem * var(--scaling-factor)) calc(0.75rem * var(--scaling-factor));
     }
 
     #menu-button {
