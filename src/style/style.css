@@ -127,7 +127,8 @@ header > div > a {
     text-decoration: none;
     font-size: calc(1.2rem * var(--scaling-factor));
     cursor: pointer;
-    padding: calc(1.2rem * var(--scaling-factor)) 0;
+    line-height: 1;
+    padding: calc(1.4rem * var(--scaling-factor)) 0;
 }
 
 a, button {
