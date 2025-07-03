@@ -181,7 +181,6 @@ section#home > div {
 
 section#home > div:first-child {
     align-items: start;
-    overflow-x: hidden;
 }
 
 section#home > div:last-child {
@@ -219,7 +218,7 @@ section#home > div:first-child > h1:hover {
 
 section#home > div:first-child > h2 {
     display: inline-block;
-    max-width: 100%;
+    width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
